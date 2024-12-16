@@ -111,8 +111,8 @@ Os arquivos de saída apresentam os seguintes formatos:
 
 ## Ferramentas Utilizadas
 
-- **Python Scripts**: 
-  - `filtra_planilha.py`
+- **Scripts**: 
+  - `filtra_planilha.sh`
   - `ANADownloader.py`
   - `anatocsv.py`
 - **Ferramenta de Conversão**: `csv2cxchuva`
