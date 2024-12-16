@@ -57,9 +57,9 @@ NR > 1 {
 # Passo 3: Criar o arquivo hidroweb.coords
 awk -F',' '
 NR > 1 {
-    print $18"#"$21"#"$22
+    printf "%08d#%.6f#%.6f\n", $18, $21, $22
 }
-' "$filtered_file" > "hidroweb.coords"
+' "$filtered_file" | sort -t'#' -k1,1 > "hidroweb.coords"
 
 echo "Arquivo filtrado foi salvo como $filtered_file."
 echo "Os códigos das estações foram salvos em $stations_file."
