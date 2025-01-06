@@ -12,7 +12,9 @@ Os dados foram obtidos a partir da seguinte fonte:
 #### 1. Filtrar Estações
 - Foi baixado um arquivo `.mdb` contendo informações sobre as estações de monitoramento da ANA.
 - O arquivo foi convertido para `.csv`.
-- As estações relevantes para a Bacia da Lagoa dos Patos foram filtradas utilizando o script `filtra_planilha.py`, que gera um arquivo contendo as estações e suas informações.
+- As estações relevantes para a Bacia da Lagoa dos Patos foram filtradas utilizando o script `filtraPlanilha.py`, que gera um arquivo contendo as estações e suas informações.
+
+Também, foi usado o arquivo 'ListaEstacoesTelemetricas.xml' baixado do hidroweb. O script 'filtra_estacoes_hidroweb.py' gera o arquivo de coordenadas das estações. (hidroweb.coords) necessário para o programa 'cx_chuva'
 
 #### 2. Download de Dados da ANA
 - O acesso à API do Hidro Webservice da ANA foi solicitado, mas devido às limitações de requisições diárias, os dados foram baixados diretamente do site da ANA.
@@ -112,7 +114,7 @@ Os arquivos de saída apresentam os seguintes formatos:
 ## Ferramentas Utilizadas
 
 - **Scripts**: 
-  - `filtra_planilha.sh`
+  - `filtraPlanilha.py`
   - `ANADownloader.py`
   - `anatocsv.py`
 - **Ferramenta de Conversão**: `csv2cxchuva`
